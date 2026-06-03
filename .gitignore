@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+*.cfg
+*.key
+*.pem
+*.p12
+*.pfx
+tokens.json
+token.json
+
+# Runtime outputs
+data/
+logs/
+out/
+output/
+reports/
+run/
+runs/
+tmp/
+*.csv
+*.csv.gz
+*.parquet
+*.jsonl
+*.log
+
+# Models and generated artifacts
+models/
+*.pkl
+*.pickle
+*.joblib
+*.pb
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

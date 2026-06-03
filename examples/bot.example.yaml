@@ -1,0 +1,20 @@
+# Documentation-only example.
+# The current CLI uses command-line flags and runs fully offline.
+
+symbol: BTCUSD
+initial_cash: 100000
+
+risk:
+  max_abs_position: 3
+  max_order_quantity: 1
+  max_spread_bps: 25
+  stale_after_ms: 5000
+
+strategy:
+  name: moving_average
+  window: 3
+  quantity: 1
+
+execution:
+  mode: mock
+  allow_live_trading: false
