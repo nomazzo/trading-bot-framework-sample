@@ -1,10 +1,8 @@
-# Sample Output
+# サンプル出力
 
-このドキュメントは、`trading-bot-framework-sample` の offline demo 出力イメージを示すためのものです。
+ここに掲載している値は説明用のサンプルで、実取引ログ、実口座情報、実運用の損益は含めていない。
 
-ここに掲載している値は説明用のサンプルです。実取引ログ、実口座情報、実運用の損益は含めていません。
-
-## CLI Demo
+## CLIデモ
 
 ```bash
 trading-bot-sample --symbol BTCUSD --ticks 6
@@ -28,9 +26,9 @@ Final position: Position(symbol='BTCUSD', quantity=0.0, avg_price=0.0, realized_
 - `reason`: RiskGuardでrejectされた場合の理由。約定時は空
 - `Final position`: demo終了時点のpaper position
 
-## Risk Rejection Example
+## RiskGuardによるreject例
 
-RiskGuard が注文を止めた場合、`OrderStatus.REJECTED` と reason が残ります。
+RiskGuard が注文を止めた場合、`OrderStatus.REJECTED` と reason が残る。
 
 例:
 
@@ -45,9 +43,9 @@ REJECTED BUY qty=2.0 reason=position_limit
 - `invalid_order_quantity`
 - `position_limit`
 
-## Paper Fill Example
+## Paper Fillの例
 
-limit order は、価格が到達するまで live order として保持されます。
+limit order は、価格が到達するまで live order として保持される。
 
 ```text
 submit BUY limit 100.00
@@ -55,4 +53,4 @@ tick ask=99.50
 fill BUY 1.0 @ 99.50
 ```
 
-この処理は `MockBrokerClient` と `PaperFillEngine` による synthetic fill です。実取引所の約定ではありません。
+この処理は `MockBrokerClient` と `PaperFillEngine` による synthetic fill です。実取引所の約定ではない。

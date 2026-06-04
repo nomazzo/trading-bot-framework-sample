@@ -46,3 +46,6 @@ models/
 Thumbs.db
 .idea/
 .vscode/
+
+# Local release preparation notes
+docs/release-checklist.md

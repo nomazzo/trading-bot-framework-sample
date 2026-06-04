@@ -88,8 +88,7 @@ trading-bot-framework-sample/
 ├── docs/
 │   ├── publication-plan.md
 │   ├── architecture.md
-│   ├── sample-output.md
-│   └── release-checklist.md
+│   └── sample-output.md
 └── tests/
 ```
 
@@ -134,8 +133,6 @@ python -m trading_bot_framework.cli --symbol BTCUSD --ticks 8
 python -m unittest discover -s tests
 ```
 
-公開前の確認項目は [docs/release-checklist.md](docs/release-checklist.md) にまとめています。
-
 ## 公開用サンプルとして除外しているもの
 
 このリポジトリには、以下を含めていません。
@@ -157,7 +154,6 @@ python -m unittest discover -s tests
 
 ## 関連リポジトリ
 
-- [mobile-app-portfolio](https://github.com/nomazzo/mobile-app-portfolio): 全体のアプリポートフォリオ説明
 - [market-data-recorder-aws](https://github.com/nomazzo/market-data-recorder-aws): public WebSocket 市場データレコーダー
 - [lightgbm-market-ml-pipeline](https://github.com/nomazzo/lightgbm-market-ml-pipeline): 市場データを対象にした LightGBM パイプライン
 - [hyperliquid-mm-simulator](https://github.com/nomazzo/hyperliquid-mm-simulator): Hyperliquid を題材にしたマーケットメイクシミュレーター
